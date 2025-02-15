@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grahok</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      html,
+      body {
+        font-family: "Poppins", Sans-Serif;
+      }
+    </style>
+    <style type="text/tailwindcss" media="all">
+      @theme {
+        --color-primary: #ff902a;
+        --color-text: #2f2105;
+        --color-light: #f9d9aa;
+      }
+    </style>
+  </head>
+  <body
+    class="text-(--color-text) flex flex-col items-center justify-center gap-[min(120px,_5vw)] pt-[min(36px,_5vw)]"
+  >
+    <header
+      class="flex justify-between items-center max-w-6xl w-full px-[min(48px,_5vw)]"
+    >
+      <section class="flex items-center gap-2">
+        <button class="md:button" type="button">
+          <i class="ti ti-menu-2 text-2xl"></i>
+        </button>
+        <img class="w-12" src="assets/landing/Logo.svg" alt="" />
+      </section>
+      <section class="hidden md:block">
+        <nav>
+          <ul class="flex gap-6">
+            <li class="text-(--color-primary)">About Us</li>
+            <li>Our Product</li>
+            <li>Delivery</li>
+          </ul>
+        </nav>
+      </section>
+      <section class="flex items-center gap-2">
+        <div
+          class="flex items-center justify-between px-2 py-1 rounded-full bg-white"
+        >
+          <label class="pr-2" for="search">
+            <i class="ti ti-search"></i>
+          </label>
+          <input
+            class="w-32 focus:outline-0"
+            type="search"
+            name="search"
+            placeholder="Cappuccino"
+            id="search"
+          />
+        </div>
+        <div class="relative">
+          <i class="ti ti-shopping-cart text-2xl"></i>
+          <span
+            class="absolute size-2 top-0 right-0 rounded-full bg-(--color-primary)"
+          ></span>
+        </div>
+      </section>
+    </header>
+    <main
+      class="flex flex-col gap-16 max-w-6xl w-full px-[min(48px,_5vw)] grow"
+    >
+      <section class="flex flex-col gap-4 max-w-xl">
+        <h1 class="text-3xl/10 lg:text-5xl/18 font-semibold">
+          Enjoy Your <span class="text-(--color-primary)">Coffee</span> before
+          your Activity
+        </h1>
+        <p>
+          Boost your productivity and build your mood with a glass of coffee in
+          the morning
+        </p>
+        <div class="flex items-center gap-3 text-sm">
+          <button
+            class="bg-(--color-text) pl-4 pr-2 py-2 text-white rounded-full flex justify-between items-center gap-3"
+            type="button"
+          >
+            <span>Order Now</span>
+            <i
+              class="bg-(--color-primary) text-white p-2 rounded-full ti ti-shopping-cart"
+            ></i>
+          </button>
+          <button class="text-(--color-primary)" type="button">
+            More Menu
+          </button>
+        </div>
+      </section>
+      <section class="flex flex-col gap-25">
+        <h1 class="text-3xl font-semibold">
+          Popular
+          <span class="underline decoration-(--color-primary)">Now</span>
+        </h1>
+        <div class="bg-(--color-light) rounded-2xl px-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-6 -translate-y-20"
+        >
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="flex flex-col gap-8">
+        <h1 class="text-3xl font-semibold">
+          How to use delivery
+          <span class="underline decoration-(--color-primary)">service</span>
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div class="flex flex-col gap-2 items-center">
+            <img class="w-28" src="assets/landing/select-coffee.png" alt="" />
+            <h3 class="font-semibold">Choose your coffee</h3>
+            <p>There are 20+ coffees for you</p>
+          </div>
+          <div class="flex flex-col gap-2 items-center">
+            <img class="w-28" src="assets/landing/select-coffee.png" alt="" />
+            <h3 class="font-semibold">Choose your coffee</h3>
+            <p>There are 20+ coffees for you</p>
+          </div>
+          <div class="flex flex-col gap-2 items-center">
+            <img class="w-28" src="assets/landing/select-coffee.png" alt="" />
+            <h3 class="font-semibold">Choose your coffee</h3>
+            <p>There are 20+ coffees for you</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class=" hidden md:flex justify-center mt-40 bg-(--color-light) py-20 relative left-1/2 -translate-x-1/2 w-dvw px-[min(48px,_5vw)]"
+      >
+        <div class="grid md:grid-cols-2 max-w-6xl">
+          <div class="flex justify-center items-center">
+            <img
+              class="h-100 absolute -top-20"
+              src="assets/landing/about-us.png"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-6">
+            <h1 class="text-3xl font-semibold">
+              About
+              <span class="underline decoration-(--color-primary)">us</span>
+            </h1>
+            <h2 class="text-2xl font-medium">
+              We deliver quality coffee, and ready to deliver.
+            </h2>
+            <p>
+              We are a company that makes and distributes delicious drinks. our
+              main product is made with a secret recipe and available in stores
+              worldwide.
+            </p>
+            <button
+              class="bg-black text-(--color-primary) rounded-full px-4 py-2 font-medium w-fit"
+              type="button"
+            >
+              Get your coffee
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col gap-8">
+        <h1 class="text-3xl font-semibold">
+          Special Menu
+          <span class="underline decoration-(--color-primary)">for you</span>
+        </h1>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-12"
+        >
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 bg-white rounded-lg flex flex-col gap-4 shadow-2xl"
+          >
+            <div class="relative">
+              <img
+                class="rounded-md"
+                src="assets/landing/vanilla-latte.png"
+                alt=""
+              />
+              <p
+                class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-sm font-bold"
+              >
+                4.8 ⭐
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="text-xl font-medium">Vanilla Latte</h3>
+              <p class="font-bold">21 K</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="flex items-center gap-4 *:px-3 *:py-1 *:rounded *:text-sm *:ring-2 *:ring-(--color-primary) *:text-(--color-primary)"
+              >
+                <p>Hot</p>
+                <p>Cold</p>
+              </div>
+              <button
+                class="bg-(--color-primary) text-white p-2 rounded-full flex items-center justify-center"
+                type="button"
+              >
+                <i class="ti ti-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="hidden lg:flex justify-center bg-(--color-light) py-20 relative left-1/2 -translate-x-1/2 w-dvw px-[min(48px,_5vw)]"
+      >
+        <div class="lg:grid grid-cols-2 justify-items-center items-center gap-24 max-w-6xl">
+          <div class="flex flex-col justify-center gap-6">
+            <h1 class="text-3xl font-semibold">What they say about us</h1>
+            <p>
+              We always provide the best service and always maintain the quality
+              of coffee
+            </p>
+          </div>
+          <div class="flex gap-8">
+            <img class="h-60" src="assets/landing/about-us.png" alt="" />
+            <img class="h-60" src="assets/landing/about-us.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center gap-8 bg-black py-6 px-4 rounded-4xl"
+      >
+        <h1 class="text-xl md:text-4xl text-white font-bold text-center">
+          Subscribe to get 50% discount
+        </h1>
+        <form
+          class="flex justify-between max-w-3xl bg-white py-1 pl-4 pr-1 rounded-full"
+        >
+          <input
+            class="w-full max-w-120 focus:outline-0"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+          <button
+            class="bg-black text-white font-semibold rounded-full px-4 py-2"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-2 w-full">
+      Created with ♥️, by Shakil Ahmmed
+    </footer>
+  </body>
+</html>
